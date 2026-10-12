@@ -1,0 +1,18 @@
+{
+  "name": "mariadb-users-app",
+  "version": "1.0.0",
+  "description": "A small users app backed by MariaDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
