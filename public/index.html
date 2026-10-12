@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="panel">
+        <h1>User Directory</h1>
+        <form id="user-form">
+          <input type="hidden" id="user-id" />
+
+          <div class="grid">
+            <label>
+              Username
+              <input id="username" name="username" required />
+            </label>
+            <label>
+              Email
+              <input id="email" name="email" type="email" required />
+            </label>
+            <label>
+              First name
+              <input id="first-name" name="first_name" />
+            </label>
+            <label>
+              Last name
+              <input id="last-name" name="last_name" />
+            </label>
+            <label class="full-width">
+              Password hash
+              <input id="password-hash" name="password_hash" required />
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="primary">Save user</button>
+            <button type="button" id="reset-btn" class="secondary">Clear</button>
+          </div>
+        </form>
+        <p id="status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Users</h2>
+        <ul id="users-list" class="user-list"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
